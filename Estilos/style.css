@@ -33,11 +33,12 @@ section#login {
     overflow: hidden;
     background-color: white;
     width: 250px;
-    height: 515px;
+    height: 535px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.552);
     transition: width 0.3s, height  0.3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
 section#login > div#imagem {
@@ -58,23 +59,50 @@ div#formulario > h1 {
 }
 
 div#formulario > p {
-    font-size: 0.8em;
+    font-size: 1em;
     padding-bottom: 10px;
 }
 
  div.Campo {
     background-color: #5f2c82;
     display: block;
+    border: 2px solid #5f2c82;
     width: 100%;
-    height: 40px;
-    border-radius: 5px;
+    height: 39px;
+    border-radius: 8px;
     margin: 5px 0px;
+}
+
+.Campo > label {
+    display: none;
+}
+
+form > div.Campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 4px;
+}
+
+div.Campo > input {
+    background-color: #56c1bd;
+    border: none;
+    font-size: 1em;
+    border-radius: 8px;
+    height: 100%;
+    padding: 5px;
+    width: calc(100% - 44.5px);
+    transform: translateY(-11px);
+}
+
+div.Campo > input:hover {
+    background-color: white;
 }
 
  input[type=submit] {
     display: block;
     font-size: 1.3em;
-    margin-top: 17px;
+    margin-top: -5px;
     width: 100%;
     height: 40px;
     background-color: #49a09d;
@@ -95,7 +123,7 @@ div#formulario > p {
     width: 100%;
     height: 40px;
     padding-top: 7px;
-    margin-top: 5px;
+    margin-top: 4px;
     border-radius: 5px;
     background-color: white;
     color: #2d6361;
